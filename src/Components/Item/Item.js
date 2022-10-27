@@ -6,11 +6,6 @@ import { useContext } from 'react'
 
 const Item = ({id, name, img, price}) => {
 
-    // const value = useContext(Context)
-
-    // console.log(value)
-
-
     return (
         <article className="CardItem">
             <header className="Header">

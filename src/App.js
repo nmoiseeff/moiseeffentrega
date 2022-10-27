@@ -16,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      <NotificationProvider>
       <CartContextProvider>
         <BrowserRouter>
           <header>
@@ -30,6 +31,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </CartContextProvider>
+      </NotificationProvider>
     </div>
   );
 }
