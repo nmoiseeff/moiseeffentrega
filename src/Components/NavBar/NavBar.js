@@ -36,16 +36,16 @@ const Navbar = () => {
               <Avatar/>
             </Link>
           </div>
-              <div className="Categories">
-                 { categories.map(cat => (
-                <NavLink key={cat.id} to={`/category/${cat.slug}`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option1'}>
-                   {cat.label}
-                </NavLink>
+          <div className="Categories">
+            { categories.map(cat => (
+            <NavLink key={cat.id} to={`/category/${cat.slug}`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option1'}>
+              {cat.label}
+            </NavLink>
             ))}
           </div>
-            <div>
-              <CartWidget />
-            </div>
+          <div>
+            <CartWidget />
+          </div>
         </nav>
     )
 }

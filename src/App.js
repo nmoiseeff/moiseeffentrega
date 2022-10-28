@@ -13,8 +13,6 @@ import Cart from './Components/Cart/Cart'
 import Checkout from './Components/Checkout/Checkout';
 function App() {
 
-  // const [page, setPage] = useState('list')
-
   return (
     <div className="App">
       <NotificationProvider>
@@ -24,8 +22,8 @@ function App() {
             <NavBar/>
           </header>
           <Routes>
-          <Route path='/' element={<ItemListContainer greeting='Listado de todos los productos'/>}/>
-          <Route path='/category/:categoryId' element={<ItemListContainer greeting= 'Listado filtrado'/>} />
+          <Route path='/' element={<ItemListContainer greeting='Estos son nuestros productos para el armado de espaciadores'/>}/>
+          <Route path='/category/:categoryId' element={<ItemListContainer greeting= 'Listado filtrado por'/>} />
           <Route path='/detail/:productId' element={<ItemDetailContainer />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/checkout' element={<Checkout />} />
