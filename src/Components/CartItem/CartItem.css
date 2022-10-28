@@ -5,8 +5,8 @@
     padding: 20px;
     margin: 30px;
     font-size: 10px;
-    background-color: papayawhip;
-    border: 1px solid #e1e1e1;
+    background-color: #e1e1e1;
+    border: 1px solid #9c9c9c;
     border-radius: 10px;
 }
 
@@ -33,8 +33,8 @@
 .ButtonCartItem {
     width: auto;
     padding: 12px;
-    font-size: 8px;
-    background: #8C30F5;
+    font-size: 16px;
+    background: #ffc400;
     border-radius: 8px;
     flex: none;
     display: flex;

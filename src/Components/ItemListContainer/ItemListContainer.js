@@ -43,12 +43,12 @@ const ItemListContainer = ({ greeting }) => {
     }, [categoryId])
 
     if(loading && true) {
-        return <h1>Cargando productos...</h1>
+        return <h3>Cargando productos...</h3>
     }
 
     return (
         <div>
-            <h1>{`${greeting} ${categoryId || ''}`}</h1>
+            <h3>{`${greeting} ${categoryId || ''}`}</h3>
             <ItemList products={products} />
         </div>
     )

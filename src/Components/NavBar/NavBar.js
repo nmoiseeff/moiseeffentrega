@@ -29,21 +29,22 @@ const Navbar = () => {
   console.log(categories)
 
     return (
-        <nav className="NavBar" style={{ display: 'flex', justifyContent: 'space-around', flexDirection: "row", backgroundColor: "#282c34", color: "white", height: "18vmin", alignContent: "baseline" }}>
-            <div>
-                <Link to= "/"><h1 className='Back'>e-commerce</h1>
-                <Avatar/></Link>
-            </div>
-                 <div className="Categories">
+        <nav className="NavBar" style={{ display: 'flex', justifyContent: 'space-around', flexDirection: "row", backgroundColor: "#282c34", color: "white", height: "18vmin",   alignContent: "baseline" }}>
+          <div>
+            <Link to= "/">
+              <h1 className='Back'>Coil spacers </h1>
+              <Avatar/>
+            </Link>
+          </div>
+              <div className="Categories">
                  { categories.map(cat => (
-                <NavLink key={cat.id} to={`/category/${cat.slug}`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}><Button label={cat.label}/> </NavLink>
+                <NavLink key={cat.id} to={`/category/${cat.slug}`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option1'}>
+                   {cat.label}
+                </NavLink>
             ))}
-                 {/*<NavLink to='/category/celular' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}><Button label={"Celulares"} /></NavLink>
-                 <NavLink to='/category/tablet' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}><Button label={"Tablets"} /></NavLink>
-    <NavLink to='/category/notebook' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}><Button label={"Notebooks"} /></NavLink>*/}
           </div>
             <div>
-                <CartWidget />
+              <CartWidget />
             </div>
         </nav>
     )
