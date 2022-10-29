@@ -1,7 +1,21 @@
 .redClass {
     background-color: red;
+    height: 50px;
+    border-radius: 5px;
+    border-color: white;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .greenClass {
     background-color: green;
+    height: 50px;
+    border-radius: 5px;
+    border-color: white;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
 }

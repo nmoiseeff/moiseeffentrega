@@ -1,7 +1,6 @@
 import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import Avatar from '../Avatar/Avatar'
-import Button from '../Button/Button'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { collection, getDocs, query, orderBy } from 'firebase/firestore'
